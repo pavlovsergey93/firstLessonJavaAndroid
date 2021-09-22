@@ -1,7 +1,5 @@
 package com.geekbrains.java.lesson1.q1;
 
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -10,14 +8,18 @@ public class Main {
         short shortValue = (short) 120;
         int intValue = 100000;
         long longValue = 8000000000L;
+
         // Переменные с плавающей запятой
         float floatValue = 5.21f;
         double doubleValue = 15.247;
+
         // Символьная переменная
         char charValue1 = 's';
         char charValue2 = 'v';
+
         // Строковые переменные
         String name = "Сергей";
+
         // Логическая переменная
         boolean booleanValue1 = true;
         boolean booleanValue2 = false;
@@ -32,7 +34,7 @@ public class Main {
         booleanValue1 = comparison(firstNumber, secondNumber);
         System.out.println("4. " + booleanValue1);
 
-        // Положительное/Отрицательное число
+        // Положительное/Отрицательное число задание 5
         int numb = 0;
         number(numb);
 
@@ -46,16 +48,19 @@ public class Main {
         int year = 1500;
         leapYear(year);
     }
+
     public static float formula (float a,float b, float c, float d){
-        return a*(b+(c/d));
+        return a * (b + (c / d));
     }
+
     public static boolean comparison (int a, int b){
-        int sum = a+b;
-        if (sum >= 10 && sum <=20)
+        int sum = a + b;
+        if (sum >= 10 && sum <= 20)
             return true;
         else
             return false;
     }
+
     public static void number(int number){
         String str;
         if (number >= 0)
@@ -64,19 +69,22 @@ public class Main {
             str = "Число отрицательное";
         System.out.println("5. " + number + " - " + str);
     }
+
     public static boolean numberBoolean(int number){
         if (number < 0)
             return true;
         else
             return false;
     }
+
     public static void hello (String name){
         System.out.println("Привет, " + name + "!");
     }
+
     public static void leapYear (int year){
         String str;
         if(year % 4 == 0){
-            if (year % 100 ==0 ) {
+            if (year % 100 == 0 ) {
                 if (year % 400 == 0)
                     str = "Год високосный";
                 else
