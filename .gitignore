@@ -1,0 +1,6 @@
+# Default ignored files
+/shelf/
+*.xml
+/target/*
+/src/test
+/src/main/resources
